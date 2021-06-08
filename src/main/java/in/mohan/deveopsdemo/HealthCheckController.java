@@ -3,6 +3,8 @@ package in.mohan.deveopsdemo;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Map;
+
 /**
  * Created by mohan on 08/06/21
  */
@@ -10,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HealthCheckController {
 
     @GetMapping("health")
-    public String health() {
-        return "All is well.. Ready to Rock";
+    public Map<String,String> health() {
+        return Map.of("Status","Up");
     }
 }
