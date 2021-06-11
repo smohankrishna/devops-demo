@@ -13,7 +13,7 @@ public class HealthCheckController {
 
     @GetMapping("health")
     public Map<String,String> health() {
-        
+        //Source tree commit
         return Map.of("Status","Up");
     }
 }
