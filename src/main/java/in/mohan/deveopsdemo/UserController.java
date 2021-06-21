@@ -13,6 +13,6 @@ public class UserController {
 
     @GetMapping
     public String userHealth() {
-        return "User is Up"
+        return "User is Up";
     }
 }
