@@ -13,8 +13,8 @@ public class HealthCheckController {
 
     @GetMapping("health")
     public Map<String,String> health() {
-        //Source tree commit
-        //Test Push
-        return Map.of("Status","Up");
+       Map<String,String> hashMap = new HashMap<>();
+        hashMap.put("Status","Up");
+        return hashMap;
     }
 }
