@@ -12,7 +12,7 @@ import java.util.Map;
 public class UserController {
 
     @GetMapping
-    public Map<String,String > userHealth() {
-        return Map.of("User Service Status", "Up");
+    public String userHealth() {
+        return "User is Up"
     }
 }
