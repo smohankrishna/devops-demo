@@ -13,7 +13,7 @@ public class HealthCheckController {
 
     @GetMapping("health")
     public Map<String,String> health() {
-       Map<String,String> hashMap = new HashMap<>();
+        Map<String,String> hashMap = new HashMap<>();
         hashMap.put("Status","Up");
         return hashMap;
     }
